@@ -8,8 +8,3 @@ interface ImportMetaEnv {
 interface ImportMeta {
   readonly env: ImportMetaEnv;
 }
-declare namespace JSX {
-  interface IntrinsicElements {
-    'l-hourglass': { size?: string, color?: string } & React.HTMLAttributes<HTMLElement>;
-  }
-}

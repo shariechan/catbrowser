@@ -1,5 +1,5 @@
 import React from 'react';
-import 'ldrs/hourglass';
+import Spinner from 'react-bootstrap/Spinner'
 import styled from '@emotion/styled';
 
 
@@ -23,7 +23,7 @@ const StyledLoader = styled.div<{ isLoading: boolean }>`
 const Loader: React.FC<LoaderType> = ({ isLoading }) => {
   return (
     <StyledLoader isLoading={isLoading} aria-live="polite" aria-busy={isLoading}>
-      {isLoading && <l-hourglass size="80" color="#c09569"></l-hourglass>}
+      {isLoading && <Spinner animation="grow" />}
     </StyledLoader>
   );
 };
